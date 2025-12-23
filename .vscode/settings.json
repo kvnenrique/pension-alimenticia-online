@@ -2,19 +2,19 @@
 	"files.associations": {
 		"*.css": "tailwindcss"
 	},
-	"projectColors.mainColor": "#2a87c0",
+	"projectColors.mainColor": "#d1f93e",
 	"window.title": "Pensión Alimenticia Online",
 	"workbench.colorCustomizations": {
 		"tab.activeBorder": "#888899",
 		"terminal.background": "#00000000",
-		"statusBarItem.warningBackground": "#2a87c0",
-		"statusBarItem.warningForeground": "#ffffff",
-		"statusBarItem.warningHoverBackground": "#2a87c0",
-		"statusBarItem.warningHoverForeground": "#ffffff90",
-		"statusBarItem.remoteBackground": "#2a87c0",
-		"statusBarItem.remoteForeground": "#ffffff",
-		"statusBarItem.remoteHoverBackground": "#2a87c0",
-		"statusBarItem.remoteHoverForeground": "#ffffff90"
+		"statusBarItem.warningBackground": "#d1f93e",
+		"statusBarItem.warningForeground": "#000000",
+		"statusBarItem.warningHoverBackground": "#d1f93e",
+		"statusBarItem.warningHoverForeground": "#00000090",
+		"statusBarItem.remoteBackground": "#d1f93e",
+		"statusBarItem.remoteForeground": "#000000",
+		"statusBarItem.remoteHoverBackground": "#d1f93e",
+		"statusBarItem.remoteHoverForeground": "#00000090"
 	},
 	"projectColors.name": "Pensión Alimenticia Online",
 	"projectColors.isActivityBarColored": false,
