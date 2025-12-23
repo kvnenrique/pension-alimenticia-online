@@ -6,6 +6,7 @@
 	"window.title": "Pensión Alimenticia Online",
 	"workbench.colorCustomizations": {
 		"tab.activeBorder": "#888899",
+		"terminal.background": "#00000000",
 		"statusBarItem.warningBackground": "#2a87c0",
 		"statusBarItem.warningForeground": "#ffffff",
 		"statusBarItem.warningHoverBackground": "#2a87c0",
