@@ -37,8 +37,8 @@
             <div>
                 <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">{STRINGS.legal}</h2>
                 <FooterLinkGroup>
-                    <FooterLink class="mb-4" href="/">{STRINGS.privacy_policy}</FooterLink>
-                    <FooterLink class="mb-4" href="/">{STRINGS.terms_and_conditions}</FooterLink>
+                    <FooterLink class="mb-4" href="/privacy_policy">{STRINGS.privacy_policy}</FooterLink>
+                    <FooterLink class="mb-4" href="/terms_and_conditions">{STRINGS.terms_and_conditions}</FooterLink>
                 </FooterLinkGroup>
             </div>
         </div>
