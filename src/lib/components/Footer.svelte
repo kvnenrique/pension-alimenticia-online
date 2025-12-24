@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { STRINGS } from "$lib/strings";
     import { Footer, FooterCopyright, FooterLinkGroup, FooterLink, FooterBrand, FooterIcon } from "flowbite-svelte";
     import { FacebookSolid, GithubSolid, DiscordSolid, TwitterSolid } from "flowbite-svelte-icons";
     //import Dribble from "$icons/Dribble.svelte";
@@ -7,7 +8,15 @@
 <Footer footerType="socialmedia">
     <div class="md:flex md:justify-between">
         <div class="mb-6 md:mb-0">
-                <FooterBrand href="https://flowbite.com" src="/images/flowbite-svelte-icon-logo.svg" alt="Flowbite Logo" name="Flowbite" />
+            <!-- 
+                FooterBrand:
+                src="/images/flowbite-svelte-icon-logo.svg" 
+             -->    
+            <FooterBrand 
+                href="/" 
+                alt="Flowbite Logo" 
+                name="{STRINGS.appName}" 
+            />
         </div>
         <div class="grid grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-6">
             <div>
