@@ -6,5 +6,7 @@ export const STRINGS = {
     terms_and_conditions: "Términos y condiciones",
     contact: "Contacto",
     follow_us: "Síguenos",
-    legal: "Legal"
+    legal: "Legal",
+    start_procedure: "Iniciar procedimiento",
+    last_update: "Última actualización"
 }
