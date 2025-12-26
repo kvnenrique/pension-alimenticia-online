@@ -15,8 +15,10 @@
 <main>
     <!-- Page background -->
     <div class="w-screen bg-zinc-100 flex justify-center">
-        <!-- Main content column -->
-        <div class="flex flex-col  items-center w-full max-w-[1400px] px-[100px] py-[50px] bg-amber-200">    
+        <!-- Main content column 
+            bg-amber-200
+        -->
+        <div class="flex flex-col  items-center w-full max-w-[1400px] px-[100px] py-[50px]">    
             <AboutUsContent/>
         </div>
     </div>

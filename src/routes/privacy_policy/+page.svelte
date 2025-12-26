@@ -15,10 +15,14 @@
 <main>
     <!-- Page background -->
     <div class="w-screen bg-zinc-100 flex justify-center">
-        <!-- Main content column -->
-        <div class="flex flex-col  items-center w-full max-w-[1400px] px-[100px] py-[50px] bg-amber-200">
-            <!-- Privacy policy column  -->
-            <div class="flex flex-col items-center w-full max-w-[600px] bg-amber-700">
+        <!-- Main content column
+            bg-amber-200
+        -->
+        <div class="flex flex-col  items-center w-full max-w-[1400px] px-[100px] py-[50px]">
+            <!-- Privacy policy column 
+                bg-amber-700
+              -->
+            <div class="flex flex-col items-center w-full max-w-[600px] ">
                 <PrivacyPolicyContent/>
             </div>
         </div>
