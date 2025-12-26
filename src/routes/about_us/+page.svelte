@@ -2,7 +2,7 @@
     import Navbar from '$lib/components/Navbar.svelte'
     import Footer from '$lib/components/Footer.svelte'
     import { STRINGS } from '$lib/strings';
-    import AboutUsContent from '$lib/components/AboutUsContent.svelte';
+    import AboutUsContent from '$lib/components/about_us/AboutUsContent.svelte';
 </script>
 
 

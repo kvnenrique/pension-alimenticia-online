@@ -2,7 +2,7 @@
     import Navbar from '$lib/components/Navbar.svelte'
     import Footer from '$lib/components/Footer.svelte'
     import { STRINGS } from '$lib/strings';
-    import PrivacyPolicyContent from '$lib/components/PrivacyPolicyContent.svelte';
+    import PrivacyPolicyContent from '$lib/components/privacy_policy/PrivacyPolicyContent.svelte';
 </script>
 
 
