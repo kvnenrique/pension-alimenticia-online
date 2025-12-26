@@ -15,8 +15,7 @@
             <FooterBrand
                 href="/" 
                 alt="Flowbite Logo" 
-                name="{STRINGS.appName}" 
-                class="[&>span]:text-white"
+                name="{STRINGS.appName}"
             />
         </div>
         <div class="grid grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-6">
