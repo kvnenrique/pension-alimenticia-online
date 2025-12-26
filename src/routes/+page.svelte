@@ -19,7 +19,7 @@
             
             <Button
                 size="xl"
-                class="inline-flex"
+                class="inline-flex bg-4T hover:bg-4T"
                 href="/request_form"    
             >
                 {STRINGS.start_procedure}
