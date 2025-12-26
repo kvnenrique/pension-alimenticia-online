@@ -15,11 +15,12 @@
 <main>
     <div class="w-screen bg-zinc-100 flex justify-center">
         <div class="flex flex-col  items-center w-full max-w-[1400px] px-[100px] py-[50px] bg-amber-200">
-            <!-- Paragram colum -->
+            <!-- Text column  -->
             <div class="flex flex-col items-center w-full max-w-[600px] bg-amber-700">
-                <p class="text-4xl">{STRINGS.privacy_policy}</p>
+                <h1 class="text-4xl">{STRINGS.privacy_policy}</h1>
+                
                 <p>{STRINGS.last_update}: <b>Diciembre 2025</b></p>
-        
+    
                 <br/>
 
                 <PrivacyPolicyContent/>
