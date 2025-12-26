@@ -3,7 +3,7 @@
     import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from "flowbite-svelte";
 </script>
 
-<Navbar>
+<Navbar class="bg-pink-900">
     <NavBrand href="/">
         <!-- <img src="/images/flowbite-svelte-icon-logo.svg" class="me-3 h-6 sm:h-9" alt="Flowbite Logo" />  -->
         <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">{STRINGS.appName}</span>
