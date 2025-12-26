@@ -13,9 +13,11 @@
 </header>
 
 <main>
+    <!-- Page background -->
     <div class="w-screen bg-zinc-100 flex justify-center">
+        <!-- Main content column -->
         <div class="flex flex-col  items-center w-full max-w-[1400px] px-[100px] py-[50px] bg-amber-200">
-            <!-- Text column  -->
+            <!-- Privacy policy column  -->
             <div class="flex flex-col items-center w-full max-w-[600px] bg-amber-700">
                 <h1 class="text-4xl">{STRINGS.privacy_policy}</h1>
                 
