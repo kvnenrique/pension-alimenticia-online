@@ -1,4 +1,19 @@
+<script>
+    import { STRINGS } from "$lib/strings";
+</script>
+
+
 <div class="text-justify">
+    <!-- Title -->
+    <div class="flex flex-col items-center">
+        <h1 class="text-4xl">{STRINGS.privacy_policy}</h1>
+                
+        <p>{STRINGS.last_update}: <b>Diciembre 2025</b></p>
+    </div>
+    
+    <br/>
+
+    <!-- Content -->
     <p>
         En <b>[Nombre del sitio o aplicación]</b>, respetamos y protegemos la privacidad de nuestros usuarios.
         Esta Política de Privacidad explica cómo recopilamos, usamos y protegemos tu información personal.

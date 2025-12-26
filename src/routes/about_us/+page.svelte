@@ -1,6 +1,8 @@
 <script>
     import Navbar from '$lib/components/Navbar.svelte'
     import Footer from '$lib/components/Footer.svelte'
+    import { STRINGS } from '$lib/strings';
+    import AboutUsContent from '$lib/components/AboutUsContent.svelte';
 </script>
 
 
@@ -9,11 +11,28 @@
 <header>
     <Navbar/>
 </header>
+
 <main>
-    <div class="myBox">
-        <p>Nosotros</p>
+    <!-- Page background -->
+    <div class="w-screen bg-zinc-100 flex justify-center">
+        <!-- Main content column -->
+        <div class="flex flex-col  items-center w-full max-w-[1400px] px-[100px] py-[50px] bg-amber-200">
+            <!-- Privacy policy column  -->
+            <!-- <div class="flex flex-col items-center w-full max-w-[600px] bg-amber-700">
+                <h1 class="text-4xl">{STRINGS.privacy_policy}</h1>
+                
+                <p>{STRINGS.last_update}: <b>Diciembre 2025</b></p>
+    
+                <br/>
+
+                <PrivacyPolicyContent/>
+            </div> -->
+            
+            <AboutUsContent/>
+        </div>
     </div>
 </main>
+
 <footer>
     <Footer/>
 </footer>
@@ -22,9 +41,4 @@
 
 
 <style>
-    .myBox {
-        width: 300px;
-        height: 300px;
-        background-color: bisque;
-    }
 </style>
