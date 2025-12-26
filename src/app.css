@@ -45,5 +45,5 @@
  Navbar
  */
  .navlink {
-    @apply text-white hover:text-white hover:underline;
+    @apply dark:text-white hover:underline;
  }

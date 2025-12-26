@@ -1,20 +1,22 @@
 <script lang="ts">
+    import { DarkMode } from "flowbite-svelte";
     import { STRINGS } from "$lib/strings";
     import { Footer, FooterCopyright, FooterLinkGroup, FooterLink, FooterBrand, FooterIcon } from "flowbite-svelte";
     import { FacebookSolid, XSolid } from "flowbite-svelte-icons";
 </script>
   
-<Footer footerType="socialmedia">
+<Footer footerType="socialmedia" class="dark dark:bg-4T">
     <div class="md:flex md:justify-between">
         <div class="mb-6 md:mb-0">
             <!-- 
                 FooterBrand:
                 src="/images/flowbite-svelte-icon-logo.svg" 
              -->    
-            <FooterBrand 
+            <FooterBrand
                 href="/" 
                 alt="Flowbite Logo" 
                 name="{STRINGS.appName}" 
+                class="[&>span]:text-white"
             />
         </div>
         <div class="grid grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-6">
@@ -44,7 +46,7 @@
         </div>
     </div>
 
-    <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8 dark:border-gray-700" />
+    <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8 dark:border-gray-500" />
     
     <!-- Icons -->
     <div class="sm:flex sm:items-center sm:justify-between">
