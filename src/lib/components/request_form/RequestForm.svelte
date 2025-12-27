@@ -5,8 +5,10 @@
 
 
 
-
-<div class="text-justify bg-red-500">
+<!--
+  bg-red-500
+-->
+<div class="text-justify">
     <!-- Title -->
      <h1 class="text-4xl">{STRINGS.registration_form}</h1>
 
