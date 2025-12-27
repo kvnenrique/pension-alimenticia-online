@@ -8,5 +8,14 @@ export const STRINGS = {
     follow_us: "Síguenos",
     legal: "Legal",
     start_procedure: "Iniciar procedimiento",
-    last_update: "Última actualización"
+    last_update: "Última actualización",
+    registration_form: "Formulario de registro",
+    marritage_certificate: "Acta de matrimonio",
+    data_of_minors: "Datos de los menores",
+    debtors_data: "Datos del deudor",
+    choose_document: "Elegir archivo",
+    rfc: "RFC",
+    curp: "CURP",
+    explanation_of_the_situation: "Exposición de la situación",
+    payslip: "Recibo de nómina"
 }
