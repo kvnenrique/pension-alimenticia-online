@@ -17,5 +17,7 @@ export const STRINGS = {
     rfc: "RFC",
     curp: "CURP",
     explanation_of_the_situation: "Exposición de la situación",
-    payslip: "Recibo de nómina"
+    payslip: "Recibo de nómina",
+    i_have_read_and_agreed_: "He leído y acepto los ",
+    and: "y"
 }

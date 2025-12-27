@@ -7,12 +7,6 @@
     <!-- Title -->
      <h1 class="text-4xl">{STRINGS.registration_form}</h1>
 
-    <!-- Acta de matrimonio -->
-     
-    <!-- Datos de los menores-->
-
-    <!-- Datos del deudor -->
-
     <div class="mx-auto max-w-3xl">
         <form class="bg-red-500">
             <!-- Marritage certificate -->
@@ -25,11 +19,13 @@
                 </div>
             </section>
 
+
             <!-- Data of minors -->
             <section>
                 <hr class="my-6 border-gray-700 sm:mx-auto lg:my-8 dark:border-gray-700" />
                 <h2 class="text-2xl">{STRINGS.data_of_minors}</h2>
             </section>
+
 
             <!-- Debtors data -->
             <section>
@@ -49,6 +45,7 @@
                 </div>
             </section>
             
+
             <!-- Explanation of the situation -->
             <section>
                 <hr class="my-6 border-gray-700 sm:mx-auto lg:my-8 dark:border-gray-700" />
@@ -69,6 +66,25 @@
                     class="block w-full rounded-lg border border-gray-300 p-2.5 text-sm
                         focus:ring-primary-500 focus:border-primary-500"
                 />
+            </section>
+
+
+            <!-- Terms and conditions -->
+            <section>
+                <hr class="my-6 border-gray-700 sm:mx-auto lg:my-8 dark:border-gray-700" />
+                <h2 class="text-2xl">{STRINGS.terms_and_conditions}</h2>
+                <br>
+                <label>
+                  <input type="checkbox" checked={false}/>
+                  {STRINGS.i_have_read_and_agreed_} 
+                  <a class="text-blue-600 underline"  href="/terms_and_conditions">
+                      {STRINGS.terms_and_conditions}
+                  </a>
+                  {STRINGS.and}
+                  <a class="text-blue-600 underline" href="/privacy_policy">
+                      {STRINGS.privacy_policy}
+                  </a>
+                </label>
             </section>
         </form>
     </div>
