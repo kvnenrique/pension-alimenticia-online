@@ -53,8 +53,15 @@
 }
 
 /**
- Navbar
+ * Navbar
  */
  .navlink {
     @apply dark:text-white hover:underline;
  }
+
+ /* *
+  * Core
+  */
+  .hyperlink {
+    @apply text-blue-600 underline
+  }

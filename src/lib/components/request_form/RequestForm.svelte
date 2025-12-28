@@ -89,11 +89,11 @@
                 <label>
                     <input type="checkbox" checked={false}/>
                     {STRINGS.i_have_read_and_agreed_} 
-                    <a class="text-blue-600 underline"  href="/terms_and_conditions">
+                    <a class="hyperlink"  href="/terms_and_conditions">
                         {STRINGS.terms_and_conditions}
                     </a>
                     {STRINGS.and}
-                    <a class="text-blue-600 underline" href="/privacy_policy">
+                    <a class="hyperlink" href="/privacy_policy">
                         {STRINGS.privacy_policy}
                     </a>
                 </label>
