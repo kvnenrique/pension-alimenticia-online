@@ -24,7 +24,7 @@
     --color-primary-400: #06f857; /* #d24f7a */
     --color-primary-500: #b8325e; /* <-- Input border */
     --color-primary-600: #06f857; /* #8f1f45 */
-    --color-primary-700: #611232; /* <-- Base color 4T */
+    --color-primary-700: #611232; /* <-- Base color (4T) #611232 */
     --color-primary-800: #4a0d26; /* <-- Button on pressed background */
     --color-primary-900: #06f857; /* #1b040e */
   
@@ -38,9 +38,6 @@
     --color-secondary-700: #0369a1;
     --color-secondary-800: #075985;
     --color-secondary-900: #0c4a6e;
-
-    /* Custom colors */
-    --color-4T: #611232;
 }
 
 @source "../node_modules/flowbite-svelte/dist";

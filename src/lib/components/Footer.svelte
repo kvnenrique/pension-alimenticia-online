@@ -5,7 +5,7 @@
     import { FacebookSolid, XSolid } from "flowbite-svelte-icons";
 </script>
   
-<Footer footerType="socialmedia" class="dark dark:bg-4T">
+<Footer footerType="socialmedia" class="dark dark:bg-primary-700">
     <div class="md:flex md:justify-between">
         <div class="mb-6 md:mb-0">
             <!-- 
