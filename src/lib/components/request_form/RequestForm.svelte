@@ -70,10 +70,13 @@
                     <li>¿Existe parentesco legal con el menor?</li>
                 </ul>
                 <br>
+
+                <!--
+                    class="focus:ring-primary-500 focus:border-primary-500"
+                -->
                 <Textarea
                     rows={10}
-                    class="block w-full rounded-lg border border-gray-300 p-2.5 text-sm
-                        focus:ring-primary-500 focus:border-primary-500"
+                    class="block w-full rounded-lg border border-gray-300 p-2.5 text-sm"
                 />
             </section>
 
