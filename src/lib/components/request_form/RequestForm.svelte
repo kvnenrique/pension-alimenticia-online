@@ -1,6 +1,7 @@
 <script>
     import { STRINGS } from "$lib/strings";
-    import { Input, Label, Button, Textarea } from 'flowbite-svelte';
+    import { Input, Label, Button, Textarea, Fileupload, Helper } from 'flowbite-svelte';
+    import { LinkBreakOutline } from "flowbite-svelte-icons";
 </script>
 
 
@@ -18,10 +19,12 @@
             <section>
                 <hr class="my-6 border-gray-700 sm:mx-auto lg:my-8 dark:border-gray-700" />
                 <h2 class="text-2xl">{STRINGS.marritage_certificate}</h2>
+                <br>
                 <div>
                     <label>
                         {STRINGS.marritage_certificate}
-                        <Button>{STRINGS.choose_document}</Button>
+                        <Fileupload class="mb-2"/>
+                        <Helper>PDF, PNG or JPG</Helper>
                     </label>
                 </div>
             </section>
@@ -31,6 +34,7 @@
             <section>
                 <hr class="my-6 border-gray-700 sm:mx-auto lg:my-8 dark:border-gray-700" />
                 <h2 class="text-2xl">{STRINGS.data_of_minors}</h2>
+                <br>
             </section>
 
 
@@ -38,6 +42,7 @@
             <section>
                 <hr class="my-6 border-gray-700 sm:mx-auto lg:my-8 dark:border-gray-700" />
                 <h2 class="text-2xl">{STRINGS.debtors_data}</h2>
+                <br>
                 <div>
                     <Label>{STRINGS.rfc}</Label>
                     <Input placeholder={STRINGS.rfc}/>
@@ -46,10 +51,12 @@
                     <Label>{STRINGS.curp}</Label>
                     <Input placeholder={STRINGS.curp}/>
                 </div>
+                <br>
                 <div>
                     <Label>
                         {STRINGS.payslip}
-                        <Button>{STRINGS.choose_document}</Button>
+                        <Fileupload class="mb-2"/>
+                        <Helper>PDF, PNG or JPG.</Helper>
                     </Label>
                 </div>
             </section>
