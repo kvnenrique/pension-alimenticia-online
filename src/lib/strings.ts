@@ -20,5 +20,6 @@ export const STRINGS = {
     payslip: "Recibo de nómina",
     i_have_read_and_agreed_: "He leído y acepto los ",
     and: "y",
-    submit: "Enviar"
+    submit: "Enviar",
+    birth_certificate_of_minors: "Acta de nacimiento de los menores"
 }

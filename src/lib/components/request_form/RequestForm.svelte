@@ -1,7 +1,15 @@
-<script>
+<script lang="ts">
     import { STRINGS } from "$lib/strings";
     import { Input, Label, Button, Textarea, Fileupload, Helper } from 'flowbite-svelte';
-    import { LinkBreakOutline } from "flowbite-svelte-icons";
+
+    let selectedFiles = $state<FileList | null>(null);
+    let fileNames = $derived(
+    selectedFiles
+      ? Array.from(selectedFiles)
+          .map((file) => file.name)
+          .join(", ")
+      : "No files selected"
+  );
 </script>
 
 
@@ -35,6 +43,12 @@
                 <hr class="my-6 border-gray-700 sm:mx-auto lg:my-8 dark:border-gray-700" />
                 <h2 class="text-2xl">{STRINGS.data_of_minors}</h2>
                 <br>
+                
+                <label>
+                    {STRINGS.birth_certificate_of_minors}
+                    <Fileupload clearable bind:files={selectedFiles} multiple />
+                    <Helper color="emerald" class="mt-2">Selected files: {fileNames}</Helper>
+                </label>
             </section>
 
 
