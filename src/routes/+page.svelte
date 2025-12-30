@@ -2,7 +2,7 @@
 <script>
     import Navbar from '$lib/components/Navbar.svelte'
     import Footer from '$lib/components/Footer.svelte'
-    import { Button }  from 'flowbite-svelte'
+    import { Card, Button }  from 'flowbite-svelte'
     import { STRINGS } from '$lib/strings';
 </script>
 
@@ -14,7 +14,7 @@
 </header>
 <main>
     <!-- Column -->
-    <div class="flex flex-col">
+    <div class="bg-zinc-100 flex flex-col">
 
         <!-- Box 1 -->
         <div class="relative min-h-[400px] h-auto">
@@ -51,10 +51,26 @@
             </div>
         </div>
 
+        
         <!-- Box 2 -->
-        <div class="py-16">
-            <div class="w-[300px] h-[300px] flex flex-col">
-                ...
+        <div class="w-screen flex justify-center">
+            <!-- Main col -->
+            <div class="flex flex-col items-center w-full max-w-[1400px] px-[100px] py-[100px]">
+                <Card size="xl" class="self-stretch w-full py-12 px-4 text-center">
+                    <h5 class="mb-2 text-4xl font-semibold text-gray-900 dark:text-white">Iniciar procedimento en línea</h5>
+                    <!-- <p class="mb-5 text-base text-gray-500 sm:text-lg dark:text-gray-400">Stay up to date and move work forward with Flowbite on iOS & Android. Download the app today.</p> -->
+                    <br>
+                    <br>
+                    <div class="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
+                        <Button
+                            size="xl"
+                            class="inline-flex w-fit"
+                            href="/request_form"
+                        >
+                            {STRINGS.start_procedure}
+                        </Button>
+                    </div>
+                </Card>
             </div>
         </div>
     </div>
