@@ -13,22 +13,53 @@
     <Navbar/>
 </header>
 <main>
-    <div class="w-screen bg-zinc-100 flex justify-center">
-        <div class="flex flex-col items-start w-full max-w-[1400px] px-[100px] py-[50px] bg-amber-200">
-            <p class="text-4xl">¿No te da la pensión para tus hijos?</p>
+    <!-- Column -->
+    <div class="flex flex-col">
+
+        <!-- Box 1 -->
+        <div class="relative min-h-[400px] h-auto">
+            <!-- Gradient -->
+            <div class="absolute inset-0 w-full z-0 flex items-center bg-gradient-to-br from-primary-700 via-primary-500 to-primary-400">
+            </div>
+
+            <!-- Banner box -->
+            <div class="relative z-1 flex items-center justify-center h-auto">
             
-            <Button
-                size="xl"
-                class="inline-flex"
-                href="/request_form"    
-            >
-                {STRINGS.start_procedure}
-            </Button>    
-            
-            <p class="text-4xl">¡Obtén una orden de descuento judicial en menos de 48 horas!</p>
+                <!-- Column -->
+                <div class="w-full max-w-[1400px] px-[100px] py-[100px]">
+                    <!-- Row -->
+                    <div class="flex w-full justify-between gap-6">
+                    
+                        <!-- Column -->
+                        <div class="flex flex-col gap-6 max-w-xl">
+                            <p class="text-6xl font-bold text-white">
+                                ¿No te da la pensión para tus hijos?
+                            </p>
+                            <p class="text-4xl font-semibold text-white">
+                                ¡Obtén una orden de descuento judicial en menos de 48 horas!
+                            </p>
+                        </div>
+                
+                        <!-- Image -->
+                        <img
+                            src="images/home_page_img.png"
+                            alt="Padres discutiendo"
+                            class="h-90 object-contain"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Box 2 -->
+        <div class="py-16">
+            <div class="w-[300px] h-[300px] flex flex-col">
+                ...
+            </div>
         </div>
     </div>
 </main>
+
 <footer>
     <Footer/>
 </footer>
