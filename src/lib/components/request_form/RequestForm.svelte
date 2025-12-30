@@ -19,7 +19,7 @@
 -->
 <div class="text-justify">
     <!-- Title -->
-     <h1 class="text-4xl">{STRINGS.registration_form}</h1>
+     <h1 class="text-4xl font-semibold">{STRINGS.registration_form}</h1>
 
     <div class="mx-auto max-w-3xl">
         <form>

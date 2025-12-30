@@ -6,7 +6,7 @@
 <div class="text-justify">
     <!-- Title -->
     <div class="flex flex-col items-center">
-        <h1 class="text-4xl">{STRINGS.privacy_policy}</h1>
+        <h1 class="text-4xl font-semibold">{STRINGS.privacy_policy}</h1>
                 
         <p>{STRINGS.last_update}: <b>Diciembre 2025</b></p>
     </div>

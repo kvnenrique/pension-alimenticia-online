@@ -4,7 +4,7 @@
 
 <div class="text-justify">
     <!-- Title -->
-    <h1 class="text-4xl">{STRINGS.about_us}</h1>
+    <h1 class="text-4xl font-semibold">{STRINGS.about_us}</h1>
 
 
     <!-- ¿Quienes somos? -->
