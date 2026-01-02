@@ -75,7 +75,7 @@
                                 />
                             </div>
                             <Checkbox classes={{ div: "mb-6 gap-1 rtl:space-x-reverse" }} required>
-                                {STRINGS.i_have_read_and_agreed_} <A href="/" class="text-primary-700 dark:text-primary-600 hover:underline">{STRINGS.terms_and_conditions}</A>.
+                                {STRINGS.i_have_read_and_agreed_} <A href="/" class="dark:text-primary-600 hyperlink">{STRINGS.terms_and_conditions}</A>.
                             </Checkbox>
                             <!-- Send button -->
                             <div>
