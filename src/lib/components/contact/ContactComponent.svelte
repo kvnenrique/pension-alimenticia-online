@@ -1,7 +1,8 @@
 <script>
-    import { Input, Label, Helper, Textarea, Button, Checkbox, A, FooterIcon} from "flowbite-svelte" 
+    import { Input, Label, Helper, Textarea, Button, Checkbox, A, FooterIcon, StepIndicator} from "flowbite-svelte" 
     import { FacebookSolid, XSolid } from "flowbite-svelte-icons";
     import { STRINGS } from "$lib/strings";
+    import { CONTACT } from "$lib/values";
 </script>
 
 <div class="text-justify w-full">
@@ -18,26 +19,26 @@
                 <div class="w-full flex-col gap-6">
                     <!-- Address -->
                     <div>
-                        <h2 class="text-2xl">Sede central y oficinas</h2>
+                        <h2 class="text-2xl">{STRINGS.headquarters_and_offices}</h2>
                         <p>
-                             Camino del Charcazo S/N 1456, San Lorenzo de la Parrilla, Toluca, Estado de México.
+                             {CONTACT.address}
                         </p>
                     </div>
                     <br>
                     <!-- Contact data -->
                     <div>
-                        <h2 class="text-2xl">Contacto</h2>
+                        <h2 class="text-2xl">{STRINGS.contact}</h2>
                         <p>
-                            <b>Teléfono</b>: 345-345-144
+                            <b>{STRINGS.phone}</b>: {CONTACT.phone}
                         </p>
                         <p>
-                            <b>Email</b>: contacto@alejando.abogados.com
+                            <b>{STRINGS.email}</b>: {CONTACT.email}
                         </p>
                     </div>
                     <br>
                     <!-- Social networks -->
                     <div>
-                        <h2 class="text-2xl">Síguenos</h2>
+                        <h2 class="text-2xl">{STRINGS.follow_us}</h2>
                         <div class="w-full flex flex-row gap-6">
                             <A href="/">
                                 <FacebookSolid class="h-5 w-5 text-gray-500 hover:text-gray-900 dark:text-gray-500 dark:hover:text-white" />
@@ -55,31 +56,31 @@
                         <!-- Column -->
                         <div class="flex flex-col gap-3">
                             <div>
-                                <Label>Nombre</Label>
-                                <Input placeholder="Nombre"/>
+                                <Label>{STRINGS.name}</Label>
+                                <Input placeholder="{STRINGS.name}"/>
                             </div>
                             <div>
-                                <Label>Correo electrónico</Label>
+                                <Label>{STRINGS.email}</Label>
                                 <Input placeholder="ejemplo@gmail.com"/>
                             </div>
                             <div>
-                                <Label>Asunto</Label>
-                                <Input placeholder="Asunto"/>
+                                <Label>{STRINGS.subject}</Label>
+                                <Input placeholder="{STRINGS.subject}"/>
                             </div>
                             <div>
-                                <Label>Mensaje:</Label>
+                                <Label>{STRINGS.message}:</Label>
                                 <Textarea
                                     rows={10}
                                     class="w-full"
                                 />
                             </div>
                             <Checkbox classes={{ div: "mb-6 gap-1 rtl:space-x-reverse" }} required>
-                                I agree with the <A href="/" class="text-primary-700 dark:text-primary-600 hover:underline">terms and conditions</A>.
+                                {STRINGS.i_have_read_and_agreed_} <A href="/" class="text-primary-700 dark:text-primary-600 hover:underline">{STRINGS.terms_and_conditions}</A>.
                             </Checkbox>
-                            <!-- Send button row -->
+                            <!-- Send button -->
                             <div>
                                 <Button type="submit">
-                                    Submit
+                                    {STRINGS.submit}
                                 </Button>
                             </div>
                         </div>

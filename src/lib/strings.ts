@@ -22,5 +22,11 @@ export const STRINGS = {
     i_have_read_and_agreed_: "He leído y acepto los ",
     and: "y",
     submit: "Enviar",
-    birth_certificate_of_minors: "Acta de nacimiento de los menores"
+    birth_certificate_of_minors: "Acta de nacimiento de los menores",
+    headquarters_and_offices: "Cede central y oficinas",
+    name: "Nombre",
+    email: "Correo electrónico",
+    subject: "Asunto",
+    message: "Mensaje",
+    phone: "Teléfono"
 }
