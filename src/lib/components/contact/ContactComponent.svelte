@@ -1,25 +1,56 @@
 <script>
-    import { Input, Label, Helper, Textarea, Button, Checkbox, A } from "flowbite-svelte" 
+    import { Input, Label, Helper, Textarea, Button, Checkbox, A, FooterIcon} from "flowbite-svelte" 
+    import { FacebookSolid, XSolid } from "flowbite-svelte-icons";
     import { STRINGS } from "$lib/strings";
 </script>
 
-<div class="text-justify bg-secondary-200 w-full">
+<div class="text-justify w-full">
     <!-- Title -->
     <h1 class="text-4xl font-semibold">{STRINGS.contact_us}</h1>
     <br>
 
     <div class="relative z-1 flex items-center justify-center h-auto w-full">
         <!-- Column -->
-         <div class="w-full max-w-[1400px] py-[50px] bg-amber-200">
+         <div class="w-full max-w-[1400px] py-[50px]">
             <!-- Row -->
-             <div class="flex w-full justify-between gap-6">
+             <div class="flex w-full justify-between gap-12">
                 <!-- data column -->
-                <div class="w-full flex col gap-6 bg-pink-400" style="height: 100px;">
-
+                <div class="w-full flex-col gap-6">
+                    <!-- Address -->
+                    <div>
+                        <h2 class="text-2xl">Sede central y oficinas</h2>
+                        <p>
+                             Camino del Charcazo S/N 1456, San Lorenzo de la Parrilla, Toluca, Estado de México.
+                        </p>
+                    </div>
+                    <br>
+                    <!-- Contact data -->
+                    <div>
+                        <h2 class="text-2xl">Contacto</h2>
+                        <p>
+                            <b>Teléfono</b>: 345-345-144
+                        </p>
+                        <p>
+                            <b>Email</b>: contacto@alejando.abogados.com
+                        </p>
+                    </div>
+                    <br>
+                    <!-- Social networks -->
+                    <div>
+                        <h2 class="text-2xl">Síguenos</h2>
+                        <div class="w-full flex flex-row gap-6">
+                            <A href="/">
+                                <FacebookSolid class="h-5 w-5 text-gray-500 hover:text-gray-900 dark:text-gray-500 dark:hover:text-white" />
+                            </A>
+                            <A href="/">
+                                <XSolid class="h-5 w-5 text-gray-500 hover:text-gray-900 dark:text-gray-500 dark:hover:text-white" />
+                            </A>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Email column -->
-                <div class="w-full flex flex-col bg-pink-300">
+                <div class="w-full flex flex-col">
                     <form>
                         <!-- Column -->
                         <div class="flex flex-col gap-3">
