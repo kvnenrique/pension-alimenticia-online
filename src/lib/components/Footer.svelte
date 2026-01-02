@@ -3,6 +3,7 @@
     import { STRINGS } from "$lib/strings";
     import { Footer, FooterCopyright, FooterLinkGroup, FooterLink, FooterBrand, FooterIcon } from "flowbite-svelte";
     import { FacebookSolid, XSolid } from "flowbite-svelte-icons";
+    import { CONTACT } from "$lib/values";
 </script>
   
 <Footer footerType="socialmedia" class="dark dark:bg-primary-700">
@@ -31,8 +32,8 @@
             <div>
                 <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">{STRINGS.follow_us}</h2>
                 <FooterLinkGroup>
-                    <FooterLink class="mb-4" href="/">Facebook</FooterLink>
-                    <FooterLink class="mb-4" href="/">X</FooterLink>
+                    <FooterLink class="mb-4" href="{CONTACT.facebook_ref}">Facebook</FooterLink>
+                    <FooterLink class="mb-4" href="{CONTACT.x_ref}">X</FooterLink>
                 </FooterLinkGroup>
             </div>
             <div>
@@ -53,10 +54,10 @@
         <FooterCopyright href="/" by="{STRINGS.appName}™" />
         <!-- Icons-->
         <div class="mt-4 flex space-x-6 sm:mt-0 sm:justify-center rtl:space-x-reverse">
-            <FooterIcon href="/">
+            <FooterIcon href="{CONTACT.facebook_ref}">
                 <FacebookSolid class="h-5 w-5 text-gray-500 hover:text-gray-900 dark:text-gray-500 dark:hover:text-white" />
             </FooterIcon>
-            <FooterIcon href="/">
+            <FooterIcon href="{CONTACT.x_ref}">
                 <XSolid class="h-5 w-5 text-gray-500 hover:text-gray-900 dark:text-gray-500 dark:hover:text-white" />
             </FooterIcon>
         </div>

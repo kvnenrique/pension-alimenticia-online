@@ -40,10 +40,10 @@
                     <div>
                         <h2 class="text-2xl">{STRINGS.follow_us}</h2>
                         <div class="w-full flex flex-row gap-6">
-                            <A href="/">
+                            <A href="{CONTACT.facebook_ref}">
                                 <FacebookSolid class="h-5 w-5 text-gray-500 hover:text-gray-900 dark:text-gray-500 dark:hover:text-white" />
                             </A>
-                            <A href="/">
+                            <A href="{CONTACT.x_ref}">
                                 <XSolid class="h-5 w-5 text-gray-500 hover:text-gray-900 dark:text-gray-500 dark:hover:text-white" />
                             </A>
                         </div>
