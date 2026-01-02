@@ -5,6 +5,7 @@ export const STRINGS = {
     privacy_policy: "Aviso de privavidad",
     terms_and_conditions: "Términos y condiciones",
     contact: "Contacto",
+    contact_us: "Contacta con nosotros",
     follow_us: "Síguenos",
     legal: "Legal",
     start_procedure: "Iniciar procedimiento",
