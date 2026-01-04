@@ -1,6 +1,6 @@
 <script lang="ts">
     import { STRINGS } from "$lib/strings";
-    import { Input, Label, Button, Textarea, Fileupload, Helper } from 'flowbite-svelte';
+    import { Input, Label, Button, Textarea, Fileupload, Helper, Checkbox, A } from 'flowbite-svelte';
 
     let selectedFiles = $state<FileList | null>(null);
     let fileNames = $derived(
@@ -107,17 +107,12 @@
                 <hr class="my-6 border-gray-700 sm:mx-auto lg:my-8 dark:border-gray-700" />
                 <h2 class="text-2xl">{STRINGS.terms_and_conditions}</h2>
                 <br>
-                <label>
-                    <input type="checkbox" checked={false}/>
+                <Checkbox classes={{ div: "mb-6 gap-1 rtl:space-x-reverse" }} required>
                     {STRINGS.i_have_read_and_agreed_} 
-                    <a class="hyperlink"  href="/terms_and_conditions">
-                        {STRINGS.terms_and_conditions}
-                    </a>
+                    <A href="/terms_and_conditions" class="dark:text-primary-600 hyperlink">{STRINGS.terms_and_conditions}</A>
                     {STRINGS.and}
-                    <a class="hyperlink" href="/privacy_policy">
-                        {STRINGS.privacy_policy}
-                    </a>
-                </label>
+                    <A href="/privacy_policy" class="dark:text-primary-600 hyperlink">{STRINGS.privacy_policy}</A>.
+                </Checkbox>
             </section>
 
             <!-- Submit button -->
