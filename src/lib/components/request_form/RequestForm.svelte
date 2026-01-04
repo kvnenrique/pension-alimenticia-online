@@ -122,7 +122,9 @@
 
             <!-- Submit button -->
             <div class="pt-4 text-center">
-                <Button color="green" size="lg">{STRINGS.submit}</Button>
+                <Button type="submit">
+                    {STRINGS.submit}
+                </Button>
             </div>
         </form>
     </div>
