@@ -2,7 +2,7 @@ export const STRINGS = {
     appName: "Pensión Alimenticia Online",
     home: "Inicio",
     about_us: "Nosotros",
-    privacy_policy: "Aviso de privavidad",
+    privacy_policy: "Aviso de privacidad",
     terms_and_conditions: "Términos y condiciones",
     contact: "Contacto",
     contact_us: "Contacta con nosotros",
