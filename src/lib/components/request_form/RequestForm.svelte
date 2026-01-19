@@ -10,17 +10,32 @@
             .join(", ")
         : "No files selected"
     );
+    let rfc = $state('')
     let curp = $state('')
 
     //
     // Functions
     //
+    
+    /**
+     * Handles RFC input for individuals, which consists
+     * of 13 alpha-numeric characters.
+     * https://www.gob.mx/cms/uploads/attachment/file/850663/Dato-6_RFC.pdf
+     * @param e
+     */
+    function handleIndividualRfcInput(e) {
+        rfc = e.target.value
+            .toUpperCase()
+            .replace(/[^A-Z0-9]/g, '')
+            .slice(0, 13)
 
-    /*
-     * Handler for CURP input, allows only uppercase letters and numbers
+        e.target.value = rfc
+    }
+    /**
+     * Handles CURP input, allows only uppercase letters and numbers
      * and constraints the length of the string to 18 characters.
      * @param e
-     **/
+     */
     function handleCurpInput(e) {
         curp = e.target.value
             .toUpperCase()
@@ -85,7 +100,11 @@
                 <!-- RFC -->
                 <div>
                     <Label>{STRINGS.rfc}</Label>
-                    <Input placeholder={STRINGS.rfc}/>
+                    <Input 
+                        placeholder={STRINGS.rfc}
+                        bind:value={rfc}
+                        oninput={handleIndividualRfcInput}
+                        />
                 </div>
                 <!-- CURP -->
                 <div>
