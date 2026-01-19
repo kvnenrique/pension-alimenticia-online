@@ -42,7 +42,9 @@
 
     <div class="mx-auto max-w-3xl">
         <form>
-            <!-- Marritage certificate -->
+            <!-- 
+                Marritage certificate 
+            -->
             <section>
                 <hr class="my-6 border-gray-700 sm:mx-auto lg:my-8 dark:border-gray-700" />
                 <h2 class="text-2xl">{STRINGS.marritage_certificate}</h2>
@@ -57,7 +59,9 @@
             </section>
 
 
-            <!-- Data of minors -->
+            <!-- 
+                Minor's data
+            -->
             <section>
                 <hr class="my-6 border-gray-700 sm:mx-auto lg:my-8 dark:border-gray-700" />
                 <h2 class="text-2xl">{STRINGS.data_of_minors}</h2>
@@ -71,15 +75,19 @@
             </section>
 
 
-            <!-- Debtors data -->
+            <!-- 
+                Debtor's data 
+            -->
             <section>
                 <hr class="my-6 border-gray-700 sm:mx-auto lg:my-8 dark:border-gray-700" />
                 <h2 class="text-2xl">{STRINGS.debtors_data}</h2>
                 <br>
+                <!-- RFC -->
                 <div>
                     <Label>{STRINGS.rfc}</Label>
                     <Input placeholder={STRINGS.rfc}/>
                 </div>
+                <!-- CURP -->
                 <div>
                     <Label>{STRINGS.curp}</Label>
                     <Input 
@@ -99,7 +107,9 @@
             </section>
             
 
-            <!-- Explanation of the situation -->
+            <!-- 
+                Explanation of the situation 
+            -->
             <section>
                 <hr class="my-6 border-gray-700 sm:mx-auto lg:my-8 dark:border-gray-700" />
                 <h2 class="text-2xl">{STRINGS.explanation_of_the_situation}</h2>
@@ -125,7 +135,9 @@
             </section>
 
 
-            <!-- Terms and conditions -->
+            <!-- 
+                Terms and conditions 
+            -->
             <section>
                 <hr class="my-6 border-gray-700 sm:mx-auto lg:my-8 dark:border-gray-700" />
                 <h2 class="text-2xl">{STRINGS.terms_and_conditions}</h2>
@@ -138,7 +150,9 @@
                 </Checkbox>
             </section>
 
-            <!-- Submit button -->
+            <!-- 
+                Submit button 
+            -->
             <div class="pt-4 text-center">
                 <Button type="submit">
                     {STRINGS.submit}
