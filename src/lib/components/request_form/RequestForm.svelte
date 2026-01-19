@@ -4,12 +4,31 @@
 
     let selectedFiles = $state<FileList | null>(null);
     let fileNames = $derived(
-    selectedFiles
-      ? Array.from(selectedFiles)
-          .map((file) => file.name)
-          .join(", ")
-      : "No files selected"
-  );
+        selectedFiles
+        ? Array.from(selectedFiles)
+            .map((file) => file.name)
+            .join(", ")
+        : "No files selected"
+    );
+    let curp = $state('')
+
+    //
+    // Functions
+    //
+
+    /*
+     * Handler for CURP input, allows only uppercase letters and numbers
+     * and constraints the length of the string to 18 characters.
+     * @param e
+     **/
+    function handleCurpInput(e) {
+        curp = e.target.value
+            .toUpperCase()
+            .replace(/[^A-Z0-9]/g, '')
+            .slice(0, 18)
+
+        e.target.value = curp
+    }
 </script>
 
 
@@ -63,7 +82,11 @@
                 </div>
                 <div>
                     <Label>{STRINGS.curp}</Label>
-                    <Input placeholder={STRINGS.curp}/>
+                    <Input 
+                        placeholder={STRINGS.curp} 
+                        bind:value={curp} 
+                        oninput={handleCurpInput}
+                        />
                 </div>
                 <br>
                 <div>
